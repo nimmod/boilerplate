@@ -1,8 +1,14 @@
 import os
 import requests
 
-os.mkdir("webslides_project")
-os.chdir("webslides_project")
+#builds a webslides project and adds some boilderplate to index.html	
+
+project_name = input('What is the name of the webslides project? ')
+
+webslides_project = 'webslides_' + project_name
+
+os.mkdir(webslides_project)
+os.chdir(webslides_project)
 os.mkdir("images")
 os.mkdir("css")
 os.mkdir("js")
